@@ -1,0 +1,11 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui"> 
+  <ribbon> 
+    <tabs> 
+      <tab id="tab1" label="Saqib Tab"> 
+        <group id="group1" label="MDS"> 
+          <button id="Button" label="Cell Border Color Hex" size="large" onAction="GetBorderColorHex" /> 
+        </group > 
+      </tab> 
+    </tabs> 
+  </ribbon> 
+</customUI>
