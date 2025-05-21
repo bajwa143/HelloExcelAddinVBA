@@ -2,10 +2,17 @@
   <ribbon> 
     <tabs> 
       <tab id="tab1" label="Saqib Tab"> 
-        <group id="group1" label="MDS"> 
-          <button id="Button" label="Cell Border Color Hex" size="large" onAction="GetBorderColorHex" /> 
-        </group > 
-      </tab> 
-    </tabs> 
-  </ribbon> 
+        <group id="group1" label="General">
+          <button id="button1" label="Cell Border Color Hex" size="large" imageMso="BorderColorPicker" onAction="GetBorderColorHex" />
+          <button id="button2" label="Background In Hex" size="large" imageMso="CellFillColorPicker" onAction="BackgroundInHex" />
+          <button id="button3" label="Select All A1" imageMso="A" onAction="SelectA1InAllSheets" />
+        </group>
+        <group id="group2" label="MDS"> 
+          <button id="button4" label="Apply Border" size="large" imageMso="BorderThickOutside" onAction="ApplyBorder" />
+          <button id="button5" label="Apply Row Banding" size="large" imageMso="TableStyleBandedRows" onAction="ApplyAlternateColor" />          
+          <button id="button6" label="Hide Gridlines All" size="large" imageMso="GridShowHide" onAction="HideGridlinesInAllSheets" />          
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
 </customUI>
